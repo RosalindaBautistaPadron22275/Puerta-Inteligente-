@@ -1,0 +1,147 @@
+/*estilo para el navbar*/
+
+.navbar {
+    background-color: #062207;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+.nav-link.active {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.navbar-toggler-icon {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon,
+.navbar-toggler:focus .navbar-toggler-icon {
+    background-color: #888;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon::before,
+.navbar-toggler:focus .navbar-toggler-icon::before,
+.navbar-toggler:hover .navbar-toggler-icon::after,
+.navbar-toggler:focus .navbar-toggler-icon::after {
+    background-color: #888;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        align-items: center;
+    }
+    .nav-item {
+        margin-left: 1.5rem;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+body {
+    /* Aplica el gradiente a todo el cuerpo del documento */
+    background: linear-gradient(#062207, #4CAF50);
+    /* Asegura que el fondo cubra toda la altura y anchura de la pantalla */
+    min-height: 100vh;
+    min-width: 100vh;
+    /* Asegura que el fondo no se repita */
+    background-repeat: no-repeat;
+    /* Hace que el fondo se redimensione según el tamaño de la ventana del navegador */
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    /* Ajusta este valor como necesites */
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: #062207;
+    text-align: center;
+}
